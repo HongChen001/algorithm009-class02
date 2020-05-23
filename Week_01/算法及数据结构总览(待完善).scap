@@ -468,12 +468,13 @@
          <String>非线性结构</String>
          <ConnectedNoteIDs>55, 60-62</ConnectedNoteIDs>
       </Note>
-      <Note Width="22.2656" FontSize="12" ID="58" Position="2376.2,892.1">
+      <Note Width="118.25" FontSize="12" ID="58" Position="2338.8,888.8">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
-         <String>栈</String>
+         <String>栈(后入先出)
+出入栈均为O(1)</String>
          <ConnectedNoteIDs>56</ConnectedNoteIDs>
       </Note>
       <Note Width="37.8906" FontSize="12" ID="59" Position="2368.4,1013.4">
@@ -482,7 +483,7 @@
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
          <String>队列</String>
-         <ConnectedNoteIDs>56</ConnectedNoteIDs>
+         <ConnectedNoteIDs>56, 63-64</ConnectedNoteIDs>
       </Note>
       <Note Width="53.5156" FontSize="12" ID="60" Position="2360.6,1134.8">
          <Appearance>
@@ -507,6 +508,27 @@
          </Appearance>
          <String>图</String>
          <ConnectedNoteIDs>57</ConnectedNoteIDs>
+      </Note>
+      <Note Width="116.797" FontSize="12" ID="63" Position="2502.3,914.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>双端队列
+出队O(1)
+入队O(1)
+两端均可出入队</String>
+         <ConnectedNoteIDs>59</ConnectedNoteIDs>
+      </Note>
+      <Note Width="96.0693" FontSize="12" ID="64" Position="2511.2,1024.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>优先级队列
+入队O(1)
+出队O(logN)</String>
+         <ConnectedNoteIDs>59</ConnectedNoteIDs>
       </Note>
    </Notes>
    <BackgroundShapes/>
