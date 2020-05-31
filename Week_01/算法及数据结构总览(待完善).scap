@@ -460,7 +460,7 @@
          <String>线性结构</String>
          <ConnectedNoteIDs>55, 58-59</ConnectedNoteIDs>
       </Note>
-      <Note Width="84.7656" FontSize="12" ID="57" Position="2086.8,1266.5">
+      <Note Width="84.7656" FontSize="12" ID="57" Position="2091.3,1444.3">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -485,29 +485,29 @@
          <String>队列</String>
          <ConnectedNoteIDs>56, 63-64</ConnectedNoteIDs>
       </Note>
-      <Note Width="53.5156" FontSize="12" ID="60" Position="2360.6,1134.8">
+      <Note Width="138.306" FontSize="12" ID="60" Position="2324.4,1194.8">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
-         <String>散列表</String>
-         <ConnectedNoteIDs>57</ConnectedNoteIDs>
+         <String>散列表(key-value) </String>
+         <ConnectedNoteIDs>57, 65</ConnectedNoteIDs>
       </Note>
-      <Note Width="22.2656" FontSize="12" ID="61" Position="2376.2,1256.1">
+      <Note Width="134.737" FontSize="12" ID="61" Position="2326.2,1446.3">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
-         <String>树</String>
-         <ConnectedNoteIDs>57</ConnectedNoteIDs>
+         <String>树：根节点出发层层递进，不存在环状结构</String>
+         <ConnectedNoteIDs>57, 68-69</ConnectedNoteIDs>
       </Note>
-      <Note Width="22.2656" FontSize="12" ID="62" Position="2380.3,1377.5">
+      <Note Width="127.626" FontSize="12" ID="62" Position="2329.7,1710.4">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
-         <String>图</String>
-         <ConnectedNoteIDs>57</ConnectedNoteIDs>
+         <String>图：多个顶点及边构成，边称为度，存在环状结构</String>
+         <ConnectedNoteIDs>57, 70-71</ConnectedNoteIDs>
       </Note>
       <Note Width="116.797" FontSize="12" ID="63" Position="2502.3,914.6">
          <Appearance>
@@ -529,6 +529,66 @@
 入队O(1)
 出队O(logN)</String>
          <ConnectedNoteIDs>59</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="65" Position="2517.0,1157.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>散列函数将key映射到数组下标，不同Key值经过散列函数转化后散列值相同，称为散列冲突</String>
+         <ConnectedNoteIDs>60, 66-67</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="66" Position="2742.3,1104.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>无散列冲突时，查找、删除及插入操作时间复杂度皆为O(1)</String>
+         <ConnectedNoteIDs>65</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="67" Position="2745.7,1202.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>散列冲突常用解决方法：冲突时在对应下标散列表中拉出一条链表。查找、删除及插入操作时间复杂度稍微退化，极端情况退化为O(n)</String>
+         <ConnectedNoteIDs>65</ConnectedNoteIDs>
+      </Note>
+      <Note Width="126.812" FontSize="12" ID="68" Position="2531.7,1391.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>二叉树：
+每个节点至多两个子节点
+遍历方式：
+前中后序遍历</String>
+         <ConnectedNoteIDs>61</ConnectedNoteIDs>
+      </Note>
+      <Note Width="130.208" FontSize="12" ID="69" Position="2530.0,1524.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>多叉树：
+每个节点至多有多个子节点</String>
+         <ConnectedNoteIDs>61</ConnectedNoteIDs>
+      </Note>
+      <Note Width="143.115" FontSize="12" ID="70" Position="2523.6,1681.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>邻接矩阵(数组)存储</String>
+         <ConnectedNoteIDs>62</ConnectedNoteIDs>
+      </Note>
+      <Note Width="127.49" FontSize="12" ID="71" Position="2531.4,1792.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>邻接表(链表)存储</String>
+         <ConnectedNoteIDs>62</ConnectedNoteIDs>
       </Note>
    </Notes>
    <BackgroundShapes/>
